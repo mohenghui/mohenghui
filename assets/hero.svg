@@ -1,0 +1,122 @@
+<svg width="1200" height="380" viewBox="0 0 1200 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Henghui Mo — AI Vision Engineer</title>
+  <desc id="desc">A futuristic dark banner with a neural vision scanner, glowing grid, and computer vision themed labels.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070B14"/>
+      <stop offset="0.5" stop-color="#0D1526"/>
+      <stop offset="1" stop-color="#120B24"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="165" y1="64" x2="1030" y2="322" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58A6FF"/>
+      <stop offset="0.52" stop-color="#A371F7"/>
+      <stop offset="1" stop-color="#39D0D8"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientTransform="translate(890 188) rotate(90) scale(145)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F6FEB" stop-opacity=".34"/>
+      <stop offset=".55" stop-color="#A371F7" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0V38" stroke="#58A6FF" stroke-opacity=".08"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="1198" height="378" rx="26"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="380" fill="url(#bg)"/>
+    <rect width="1200" height="380" fill="url(#grid)"/>
+    <circle cx="890" cy="188" r="178" fill="url(#orb)"/>
+    <circle cx="108" cy="312" r="92" fill="#1F6FEB" fill-opacity=".12" filter="url(#softGlow)"/>
+
+    <g opacity=".72">
+      <path d="M0 318C178 264 294 348 472 290C659 229 771 315 973 244C1060 214 1135 218 1200 230" stroke="url(#neon)" stroke-opacity=".28"/>
+      <path d="M0 333C190 283 313 363 489 308C674 250 811 326 1002 259C1074 234 1143 236 1200 245" stroke="url(#neon)" stroke-opacity=".12"/>
+    </g>
+
+    <g font-family="'Segoe UI', 'Noto Sans SC', Arial, sans-serif">
+      <text x="74" y="73" fill="#58A6FF" font-family="'Cascadia Code', monospace" font-size="14" letter-spacing="3">HELLO_WORLD / 你好，世界</text>
+      <rect x="74" y="91" width="54" height="4" rx="2" fill="#58A6FF" filter="url(#glow)"/>
+
+      <text x="70" y="176" fill="#F0F6FC" font-size="64" font-weight="750" letter-spacing="-2">HENGHUI</text>
+      <text x="394" y="176" fill="url(#neon)" font-size="64" font-weight="750" letter-spacing="-2">MO</text>
+      <text x="74" y="218" fill="#8B949E" font-family="'Cascadia Code', monospace" font-size="19" letter-spacing="4">AI VISION ENGINEER</text>
+
+      <g font-family="'Cascadia Code', monospace" font-size="12">
+        <rect x="74" y="257" width="126" height="34" rx="17" fill="#58A6FF" fill-opacity=".09" stroke="#58A6FF" stroke-opacity=".55"/>
+        <circle cx="93" cy="274" r="4" fill="#58A6FF" filter="url(#glow)">
+          <animate attributeName="opacity" values=".35;1;.35" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <text x="106" y="278" fill="#C9D1D9">CV / YOLO</text>
+
+        <rect x="212" y="257" width="144" height="34" rx="17" fill="#A371F7" fill-opacity=".09" stroke="#A371F7" stroke-opacity=".55"/>
+        <circle cx="231" cy="274" r="4" fill="#A371F7" filter="url(#glow)">
+          <animate attributeName="opacity" values="1;.35;1" dur="2.1s" repeatCount="indefinite"/>
+        </circle>
+        <text x="244" y="278" fill="#C9D1D9">DEEP LEARNING</text>
+
+        <rect x="368" y="257" width="148" height="34" rx="17" fill="#39D0D8" fill-opacity=".09" stroke="#39D0D8" stroke-opacity=".55"/>
+        <circle cx="387" cy="274" r="4" fill="#39D0D8" filter="url(#glow)">
+          <animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <text x="400" y="278" fill="#C9D1D9">CREATIVE CODE</text>
+      </g>
+
+      <text x="74" y="332" fill="#484F58" font-family="'Cascadia Code', monospace" font-size="12" letter-spacing="1.5">CHINA  /  GITHUB.COM/MOHENGHUI  /  STATUS: BUILDING</text>
+    </g>
+
+    <g transform="translate(890 188)">
+      <circle r="126" stroke="#58A6FF" stroke-opacity=".16"/>
+      <circle r="96" stroke="#A371F7" stroke-opacity=".22" stroke-dasharray="5 9">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="68" stroke="url(#neon)" stroke-width="2" stroke-dasharray="16 8" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="14s" repeatCount="indefinite"/>
+      </circle>
+
+      <path d="M-118 0H118M0-118V118" stroke="#58A6FF" stroke-opacity=".16"/>
+      <path d="M-42 0C-24-34 24-34 42 0C24 34-24 34-42 0Z" stroke="url(#neon)" stroke-width="3" filter="url(#glow)"/>
+      <circle r="14" fill="#0D1117" stroke="#58A6FF" stroke-width="3"/>
+      <circle r="5" fill="#F0F6FC" filter="url(#glow)">
+        <animate attributeName="r" values="4;7;4" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+
+      <g fill="#58A6FF">
+        <circle cx="-96" cy="-72" r="3"/>
+        <circle cx="93" cy="-78" r="3"/>
+        <circle cx="108" cy="62" r="3"/>
+        <circle cx="-86" cy="86" r="3"/>
+      </g>
+      <g stroke="#58A6FF" stroke-opacity=".32">
+        <path d="M-96-72L-42-19M93-78L40-21M108 62L39 18M-86 86L-38 23"/>
+      </g>
+    </g>
+
+    <g font-family="'Cascadia Code', monospace" font-size="10" fill="#6E7681">
+      <text x="1045" y="69">CONF 0.98</text>
+      <text x="1045" y="87">FPS  60.0</text>
+      <text x="1045" y="105">MODE LIVE</text>
+      <text x="1010" y="324">[ TARGET LOCKED ]</text>
+    </g>
+
+    <rect x="-140" y="0" width="120" height="380" fill="url(#neon)" fill-opacity=".035" transform="skewX(-14)">
+      <animate attributeName="x" values="-140;1380" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="378" rx="26" stroke="url(#neon)" stroke-opacity=".38" stroke-width="2"/>
+  <path d="M28 1H184M1016 379H1172" stroke="url(#neon)" stroke-width="3"/>
+</svg>
