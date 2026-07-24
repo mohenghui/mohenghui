@@ -72,15 +72,7 @@
   <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=mohenghui&bg_color=0D1117&color=58A6FF&line=A371F7&point=FFFFFF&area=true&area_color=1F6FEB&hide_border=true&custom_title=CONTRIBUTION%20SIGNAL" alt="Contribution activity graph" />
 </div>
 
-## `05. FULL SIGNAL / 满格展示`
-
-<div align="center">
-  <img width="100%" src="./assets/contribution-wall.svg" alt="A full contribution wall visual demo" />
-  <br />
-  <sub><code>VISUAL DEMO</code> · 满格效果展示，不代表真实 GitHub 历史贡献数据</sub>
-</div>
-
-## `06. LIVE CONTRIBUTION STREAM`
+## `05. LIVE CONTRIBUTION STREAM`
 
 <div align="center">
   <picture>
