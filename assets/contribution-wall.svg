@@ -1,0 +1,118 @@
+<svg width="1200" height="270" viewBox="0 0 1200 270" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Full Signal — contribution wall visual demo</title>
+  <desc id="desc">A decorative, fully illuminated contribution grid in a neon green, cyan, blue, and purple gradient. It is explicitly labeled as a visual demo.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070B12"/>
+      <stop offset=".5" stop-color="#091521"/>
+      <stop offset="1" stop-color="#100A1C"/>
+    </linearGradient>
+    <linearGradient id="energy" x1="130" y1="0" x2="1031" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#26A641"/>
+      <stop offset=".22" stop-color="#39D353"/>
+      <stop offset=".48" stop-color="#2DD4BF"/>
+      <stop offset=".72" stop-color="#58A6FF"/>
+      <stop offset="1" stop-color="#A371F7"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="76" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="tiles" width="17" height="17" patternUnits="userSpaceOnUse">
+      <rect x="1" y="1" width="13" height="13" rx="3" fill="white"/>
+    </pattern>
+    <pattern id="microGrid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#58A6FF" stroke-opacity=".035"/>
+    </pattern>
+    <mask id="gridMask">
+      <rect x="130" y="82" width="901" height="119" fill="url(#tiles)"/>
+    </mask>
+    <clipPath id="gridClip">
+      <rect x="130" y="82" width="901" height="119" rx="3"/>
+    </clipPath>
+    <filter id="glow" x="-50%" y="-100%" width="200%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-100%" width="200%" height="300%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="268" rx="22" fill="url(#background)" stroke="#30363D"/>
+  <rect x="1" y="1" width="1198" height="268" rx="22" fill="url(#microGrid)"/>
+
+  <g font-family="'Cascadia Code', 'JetBrains Mono', monospace">
+    <circle cx="39" cy="35" r="4" fill="#39D353" filter="url(#glow)">
+      <animate attributeName="opacity" values=".35;1;.35" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <text x="53" y="40" fill="#F0F6FC" font-size="17" font-weight="700" letter-spacing="2">FULL SIGNAL</text>
+    <text x="195" y="40" fill="#6E7681" font-size="12" letter-spacing="2">/ VISUAL DEMO</text>
+    <text x="1160" y="40" fill="#39D353" font-size="11" text-anchor="end">371 / 371 CELLS ONLINE</text>
+
+    <g fill="#6E7681" font-size="10">
+      <text x="130" y="69">AUG</text>
+      <text x="198" y="69">SEP</text>
+      <text x="283" y="69">OCT</text>
+      <text x="368" y="69">NOV</text>
+      <text x="436" y="69">DEC</text>
+      <text x="521" y="69">JAN</text>
+      <text x="606" y="69">FEB</text>
+      <text x="674" y="69">MAR</text>
+      <text x="759" y="69">APR</text>
+      <text x="827" y="69">MAY</text>
+      <text x="912" y="69">JUN</text>
+      <text x="980" y="69">JUL</text>
+
+      <text x="92" y="110">MON</text>
+      <text x="92" y="144">WED</text>
+      <text x="92" y="178">FRI</text>
+    </g>
+  </g>
+
+  <rect x="127" y="79" width="907" height="125" rx="6" stroke="#39D353" stroke-opacity=".12"/>
+  <rect x="130" y="82" width="901" height="119" fill="url(#energy)" mask="url(#gridMask)" filter="url(#glow)"/>
+
+  <g clip-path="url(#gridClip)" mask="url(#gridMask)">
+    <rect x="84" y="76" width="76" height="132" fill="url(#scan)" opacity=".45">
+      <animate attributeName="x" values="84;1050" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g fill="#FFFFFF" filter="url(#glow)">
+    <rect x="199" y="100" width="13" height="13" rx="3" opacity=".12">
+      <animate attributeName="opacity" values=".1;.8;.1" dur="2.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="369" y="168" width="13" height="13" rx="3" opacity=".12">
+      <animate attributeName="opacity" values=".1;.75;.1" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="556" y="83" width="13" height="13" rx="3" opacity=".12">
+      <animate attributeName="opacity" values=".1;.7;.1" dur="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="743" y="151" width="13" height="13" rx="3" opacity=".12">
+      <animate attributeName="opacity" values=".1;.8;.1" dur="3.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="947" y="117" width="13" height="13" rx="3" opacity=".12">
+      <animate attributeName="opacity" values=".1;.75;.1" dur="2.7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g font-family="'Cascadia Code', 'JetBrains Mono', monospace" font-size="10">
+    <text x="130" y="234" fill="#6E7681">SYNTHETIC DISPLAY · NOT HISTORICAL CONTRIBUTION DATA</text>
+    <text x="916" y="234" fill="#6E7681">LESS</text>
+    <rect x="951" y="224" width="10" height="10" rx="2" fill="#26A641"/>
+    <rect x="966" y="224" width="10" height="10" rx="2" fill="#39D353"/>
+    <rect x="981" y="224" width="10" height="10" rx="2" fill="#2DD4BF"/>
+    <rect x="996" y="224" width="10" height="10" rx="2" fill="#58A6FF"/>
+    <rect x="1011" y="224" width="10" height="10" rx="2" fill="#A371F7"/>
+    <text x="1028" y="234" fill="#6E7681">MAXED</text>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="268" rx="22" stroke="url(#energy)" stroke-opacity=".22"/>
+  <path d="M24 1H174M1026 269H1176" stroke="url(#energy)" stroke-width="3"/>
+</svg>
